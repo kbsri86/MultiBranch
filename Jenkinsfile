@@ -6,6 +6,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                snDevOpsChange()
+
                 echo 'build... '
                 sleep 5
             }
